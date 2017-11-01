@@ -17,6 +17,10 @@
 1. **Hello World** - Created a queue (test-queue) using RabbitMQ Admin Interface and used AQMP helper classes to send and receive message from the queue.<br/>
 Solution for error: Exception Error:channel is already closed due to channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'durable' for queue 'test-queue' in vhost '/': received 'false' but current is 'true', class-id=50, method-id=10)<br/> 
 https://stackoverflow.com/questions/31762563/issue-in-establishing-connection-with-rabbit-mq 
-1. **Work Queues**
+1. **Multi Thread AQMP - Hello World** - Created two threads t1 & t2 , where t1 is producer and t2 is consumer.
+Output:
+ [Thread 2:] Waiting for messages. To exit press CTRL+C
+ [Thread 1] Sent: '[Java Client]: Hello World !'
+ [Thread 2:] Received '[Java Client]: Hello World !'
 1. **Publish/Subscribe**
 
