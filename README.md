@@ -14,4 +14,12 @@
 * Default(nameless) exchange - Routing key is the queue name ( RabbitMQ specific) 
 * Message Queue Vs Web Service: https://stackoverflow.com/questions/2383912/message-queue-vs-web-services
 
+<br/><br/>
+## Tutorials
+1. **Hello World** - Created a queue (test-queue) using RabbitMQ Admin Interface and used AQMP helper classes to send and receive message from the queue.<br/>
+Solution for error: Exception Error:channel is already closed due to channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'durable' for queue 'test-queue' in vhost '/': received 'false' but current is 'true', class-id=50, method-id=10)
+<br/> 
+Change channel.queueDeclare(QUEUE_NAME, false, false, false, null) -> channel.queueDeclare(QUEUE_NAME, true, false, false, null);
+<br/> 
+https://stackoverflow.com/questions/31762563/issue-in-establishing-connection-with-rabbit-mq 
 
