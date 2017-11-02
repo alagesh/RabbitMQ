@@ -39,4 +39,10 @@ Output:<br/>
  1. **Fanout** - Created an exchange (test-fanout-exchange) and binded two queues using RabbitMQ Admin interface <br/>
  To replicate Publish/Subscribe, created a producer thread which send message to 'Exchange' and two consumer thread listening to their own corresponding separate queues. <br/>
  Output: <br/>
+ [Consumer 2] Waiting for messages at queue: [test-fanout-queue-2]. To exit press CTRL+C<br/>
+ [Consumer 1] Waiting for messages at queue: [test-fanout-queue-1]. To exit press CTRL+C<br/>
+ [Producer] Sent: 'Broadcasting Message - Hello World'<br/>
+ [Consumer 2] Received message from [test-fanout-queue-2] :'Broadcasting Message - Hello World'<br/>
+ [Consumer 1] Received message from [test-fanout-queue-1] :'Broadcasting Message - Hello World'<br/>
+ 1. **Routing**-
 
