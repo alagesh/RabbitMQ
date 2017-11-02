@@ -22,5 +22,19 @@ Output:<br/>
  [Thread 2:] Waiting for messages. To exit press CTRL+C<br/>
  [Thread 1] Sent: '[Java Client]: Hello World !'<br/>
  [Thread 2:] Received '[Java Client]: Hello World !'<br/>
-1. **Work Queues**
+1. **Work Queues** - Created one thread as producer to iterate and send multiple messages to queue & 2 consumer threads to listen to same queue.<br/>
+Output:<br/>
+[Consumer 2] Waiting for messages. To exit press CTRL+C<br/>
+ [Consumer 1] Waiting for messages. To exit press CTRL+C<br/>
+ [Producer] Sent: 'Message Id : [1]'<br/>
+ [Consumer 2] Received 'Message Id : [1]'<br/>
+ [Producer] Sent: 'Message Id : [2]'<br/>
+ [Consumer 1] Received 'Message Id : [2]'<br/>
+ [Producer] Sent: 'Message Id : [3]'<br/>
+ [Producer] Sent: 'Message Id : [4]'<br/>
+ [Producer] Sent: 'Message Id : [5]'<br/>
+ [Consumer 2] Received 'Message Id : [3]'<br/>
+ [Consumer 1] Received 'Message Id : [4]'<br/>
+ [Consumer 2] Received 'Message Id : [5]'<br/>
+1.**Fanout** 
 
