@@ -36,5 +36,7 @@ Output:<br/>
  [Consumer 2] Received 'Message Id : [3]'<br/>
  [Consumer 1] Received 'Message Id : [4]'<br/>
  [Consumer 2] Received 'Message Id : [5]'<br/>
-1.**Fanout** 
+ 1. **Fanout** - Created an exchange (test-fanout-exchange) and binded two queues (test-fanout-queue-1 ,test-fanout-queue-2) using RabbitMQ Admin interface <br/>
+ To replicate Publish/Subscribe, created a producer thread which send message to 'Exhcange' and two consumer thread listening to their own corresponding separate queues. <br/>
+ Output: <br/>
 
