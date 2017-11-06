@@ -36,7 +36,7 @@ Output:<br/>
  [Consumer 2] Received 'Message Id : [3]'<br/>
  [Consumer 1] Received 'Message Id : [4]'<br/>
  [Consumer 2] Received 'Message Id : [5]'<br/>
- 1. **Fanout** - Created an exchange (test-fanout-exchange) and binded two queues using RabbitMQ Admin interface <br/>
+ 1. **Fanout** - Created an exchange **(test-fanout-exchange)** and binded two queues using RabbitMQ Admin interface <br/>
  To replicate Publish/Subscribe, created a producer thread which send message to 'Exchange' and two consumer thread listening to their own corresponding separate queues. <br/>
  Output: <br/>
  [Consumer 2] Waiting for messages at queue: [test-fanout-queue-2]. To exit press CTRL+C<br/>
@@ -44,7 +44,7 @@ Output:<br/>
  [Producer] Sent: 'Broadcasting Message - Hello World'<br/>
  [Consumer 2] Received message from [test-fanout-queue-2] :'Broadcasting Message - Hello World'<br/>
  [Consumer 1] Received message from [test-fanout-queue-1] :'Broadcasting Message - Hello World'<br/>
- 1. **Direct Exchange**- Direct exchange (test-direct-exchange) configured using RabbitMQ admin console<br/>
+ 1. **Direct Exchange**- Direct exchange **(test-direct-exchange)** configured using RabbitMQ admin console<br/>
 	  test-direct-queue-1 binded to exchange for messages with routing key : Severity_1<br/>
 	  test-direct-queue-2 binded to exchange for messages with routing key : Severity_2 & Severity_3<br/>
 	  So when 4 messages send to exchange <br/>
