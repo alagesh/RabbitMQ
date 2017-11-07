@@ -52,8 +52,8 @@ Output:<br/>
 	  Severity 2 & Severity 3 -> Send to queue 2<br/>
 	  Severity 4 message dropped<br/>
 1. **Topics Exchange** - Topics exchange **(test-topics-exchange)** configured using RabbitMQ admin console<br/>
-	  test-topics-queue-1 binded to exchange for messages with routing key : ** *.1 **<br/> 
-	  test-topics-queue-2 binded to exchange for messages with routing key : ** *.2.* & #.3 ** <br/>
+	  test-topics-queue-1 binded to exchange for messages with routing key :  *.1 <br/> 
+	  test-topics-queue-2 binded to exchange for messages with routing key :  *.2.* & #.3  <br/>
 	  So when 6 messages send to exchange with following routing key:<br/>
 	  Severity.1 -> send to queue 1<br/>
 	  Severity.2.Error & Severity.Log.Details.3 -> Send to queue 2<br/>
